@@ -1,4 +1,6 @@
-const hello = () => {
-    console.log("Hello Node.js! This is my first function.");
-};
-hello();
+const fs = require("fs");
+fs.rename("sample.txt", "test.txt",
+    (err) => {
+        if(err) throw err;
+        console.log("File name updated");
+    });
