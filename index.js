@@ -1,6 +1,6 @@
 const fs = require("fs");
-fs.rename("sample.txt", "test.txt",
+fs.unlink("test.txt",
     (err) => {
         if(err) throw err;
-        console.log("File name updated");
+        console.log("File test.txt deleted successfully");
     });
